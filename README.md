@@ -19,6 +19,7 @@ There are 7 different APIs that are returning incident related data.
 ### Step by step approach
 - Create a Springboot project
 - Define Controllers/service/models/helpers packages
+- Number of models for each type of incident and each priority of incidents
 - There is just 1 endpoint of the API GET /incidents (base url - /api/elevate)
 - Call the service layer and get data from different APIs (elevate APIs including the identities API) and merge them in a single list. Please see the format (Each API has a different model associated to it)
 - Once we have the cumulative data in a common model (Incidents.java in our case), group by employee id.
